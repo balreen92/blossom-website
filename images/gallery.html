@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Blossom Public Sr. Sec. School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; background-color: #fdfdfd; }
+    .navbar { background-color: #001f3f; }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .section-title { text-align: center; margin: 50px 0 30px; font-weight: bold; color: #001f3f; }
+    .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; transition: transform .3s; }
+    .gallery img:hover { transform: scale(1.05); }
+    footer { background: #001f3f; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet"> <!-- if you use it -->
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Blossom Public Sr. Sec. School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="container py-5">
+    <h2 class="section-title">Our Activities & Achievements</h2>
+    <div class="row gallery">
+      <div class="col-md-3"><img src="images/Sports.jpeg" alt="Sports"></div>
+      <div class="col-md-3"><img src="images/Sports5.jpeg" alt="Sports"></div>
+      <div class="col-md-3"><img src="images/Religious.jpeg" alt="Religious Activities"></div>
+      <div class="col-md-3"><img src="images/ReligiousActivities.jpeg" alt="Religious Programs"></div>
+      <div class="col-md-3"><img src="images/Achievers.jpeg" alt="Achievers"></div>
+      <div class="col-md-3"><img src="images/Awards3.jpeg" alt="Awards Ceremony"></div>
+      <div class="col-md-3"><img src="images/Chemistrylab1.jpeg" alt="Chemistry Lab"></div>
+      <div class="col-md-3"><img src="images/Math.jpeg" alt="Math Activity"></div>
+      <div class="col-md-3"><img src="images/Science1.jpeg" alt="Science Lab"></div>
+      <div class="col-md-3"><img src="images/Schooltrip1.jpeg" alt="School Trip"></div>
+      <div class="col-md-3"><img src="images/Schooltrip.jpeg" alt="Educational Tour"></div>
+      <div class="col-md-3"><img src="images/ExtraActivities.jpeg" alt="Extra Curricular"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+</body>
+</html>
+ <!-- Footer (same style as index) -->
+ <footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1">&copy; 2025 Blossom Public Sr. Sec. School</p>
+    <p class="mb-1">Village Chakar, Tehsil Jagraon, District Ludhiana, Punjab</p>
+    <p class="mb-0">
+      <a href="https://www.facebook.com/sandhusatnamm" class="text-light me-3" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/blossompublicschoolchakar" class="text-light me-3" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/917814551217?text=Hello%20Admissions%2C%20I%27d%20like%20to%20enquire." class="text-light" target="_blank" rel="noopener">WhatsApp</a>
+    </p>
+  </div>
+</footer>

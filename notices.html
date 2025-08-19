@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notices — Blossom Public Sr. Sec. School</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet"> <!-- if you use it -->
+
+  
+</head>
+<body>
+<!-- TOP STRIP (same everywhere) -->
+<div id="top-bar" class="d-flex justify-content-between align-items-center px-4">
+  <div class="top-bar-left">
+    <small>
+      <strong>Nursery Admissions 2025–26:</strong>
+      <a href="admissions.html" class="text-decoration-none">Click here for registration form</a>
+    </small>
+  </div>
+  <div class="top-bar-right">
+    <a href="press.html" class="me-3 text-decoration-none">
+      <i class="bi bi-newspaper"></i> In the Press
+    </a>
+    <a href="admissions.html" class="text-decoration-none">
+      <i class="bi bi-journal-text"></i> Admissions
+    </a>
+  </div>
+</div>
+
+<!-- NAVBAR (same everywhere; only change the active link) -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#7a0f16;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo1.png" alt="Blossom School Logo" style="max-height:60px;">
+      <span>Blossom Public School</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="notices.html">Notices</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <!-- Notices Section -->
+  <section id="notices" class="container py-5">
+    <h1 class="mb-4">Latest Notices</h1>
+    <div class="list-group">
+      <!-- Sample Notice -->
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Unit Test Schedule Published</h5>
+          <small>August 5, 2025</small>
+        </div>
+        <p class="mb-1">The schedule for upcoming Unit Tests (Classes VI–XII) is now available. Click to view details.</p>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Parent–Teacher Meeting</h5>
+          <small>July 28, 2025</small>
+        </div>
+        <p class="mb-1">PTM for Classes I–V on August 10 from 9 AM to 12 PM in the school auditorium.</p>
+      </a>
+      <!-- Add more notices as needed -->
+    </div>
+  </section>
+
+  <!-- Bootstrap JS bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1">&copy; 2025 Blossom Public Sr. Sec. School</p>
+    <p class="mb-1">Village Chakar, Tehsil Jagraon, District Ludhiana, Punjab</p>
+    <p class="mb-0">
+      <a href="https://www.facebook.com/sandhusatnamm" class="text-light me-3" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/blossompublicschoolchakar" class="text-light me-3" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/917814551217?text=Hello%20Admissions%2C%20I%27d%20like%20to%20enquire." class="text-light me-3" target="_blank" rel="noopener">WhatsApp</a>
+      <!-- If you have a WhatsApp *Channel* link, use that instead of wa.me: -->
+      <!-- <a href="https://whatsapp.com/channel/XXXXXXXXXXXX" class="text-light me-3" target="_blank" rel="noopener">WhatsApp Channel</a> -->
+    </p>
+  </div>
+</footer>

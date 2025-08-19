@@ -1,0 +1,218 @@
+/* ===== MAROON + GOLD THEME ===== */
+:root{
+  --maroon:   #7B1E21;   /* primary */
+  --maroon-900:#5E1417;  /* darker for hovers */
+  --gold:     #F4C430;   /* accent */
+  --gold-700: #D9AC1C;   /* hover */
+  --cream:    #FFF8F0;   /* page bg */
+  --paper:    #FFFFFF;   /* cards/sections */
+  --ink:      #1F1F1F;   /* text */
+  --muted:    #6B6B6B;   /* secondary text */
+}
+
+/* Base */
+html{scroll-behavior:smooth}
+body{
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+h2,h3,h4,h5{
+  font-family: 'Montserrat', system-ui, sans-serif;
+  color: var(--maroon);
+  letter-spacing:.3px;
+}
+.hero-section h1,
+.hero-section h2,
+.hero-section p {
+  color: #fff !important;   /* force white */
+}
+
+/* Top utility bar */
+#top-bar{
+  background: #FFF;                       /* white for contrast */
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  font-size:.9rem;
+  padding:.35rem 1rem;
+}
+#top-bar a{color: var(--maroon)}
+#top-bar a:hover{color: var(--gold)}
+
+/* Navbar */
+.navbar{
+  background: var(--maroon) !important;
+  padding:.35rem 0;                        /* compact height */
+}
+.navbar .navbar-brand,
+.navbar .nav-link{color:#fff !important}
+.navbar .nav-link:hover{color: var(--gold) !important}
+.navbar-brand img{
+  height: 54px; width:auto; margin-right:.6rem; vertical-align:middle;
+}
+
+/* Thin gold stripe under navbar (optional) */
+.nav-underline{
+  height:6px; background: var(--gold);
+}
+
+/* Hero */
+.hero-section{
+  position:relative; min-height:60vh;
+  display:flex; align-items:center; justify-content:center;
+  background: url('images/campus-banner.jpg') center/cover no-repeat;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* top:0; left:0; right:0; bottom:0 */
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.hero-content{position:relative; z-index:1; text-align:center; color:#fff}
+.hero-content h1,.hero-content p{
+  text-shadow: 0 4px 18px rgba(0,0,0,.55);
+}
+/* HERO carousel */
+.hero-wrap { position: relative; }
+.hero-img { height: 68vh; object-fit: cover; }
+@media (min-width: 992px){ .hero-img { height: 82vh; } }
+
+.hero-overlay{
+  position:absolute; inset:0;
+  background: linear-gradient(0deg, rgba(0,0,0,.45), rgba(0,0,0,.45));
+}
+
+.hero-caption h1{ font-family: 'Montserrat',sans-serif; font-weight:700; text-shadow:0 8px 28px rgba(0,0,0,.55); }
+.hero-caption p{ font-size:1.05rem; text-shadow:0 6px 18px rgba(0,0,0,.55); }
+.carousel-caption.hero-caption{
+  bottom: 18%;
+}
+
+/* Buttons */
+.btn-primary{
+  background: var(--gold); border-color: var(--gold); color:#2B2100;
+}
+.btn-primary:hover{background: var(--gold-700); border-color: var(--gold-700)}
+.btn-outline-primary{
+  color: var(--maroon); border-color: var(--maroon);
+}
+.btn-outline-primary:hover{
+  background: var(--maroon); color:#fff; border-color: var(--maroon);
+}
+
+/* Cards & sections */
+.card{background: var(--paper); border:0; box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card:hover{transform:translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,.10); transition:.25s}
+.section{
+  padding: 3.5rem 0;
+  background: var(--paper);
+  border-radius: 12px;
+}
+
+/* Links */
+a{color: var(--maroon)}
+a:hover{color: var(--gold)}
+
+/* Footer */
+footer{background: var(--maroon); color:#fff}
+footer a{color:#fff}
+footer a:hover{color: var(--gold)}
+
+/* Accessibility helpers */
+.badge-gold{background:var(--gold); color:#2B2100}
+.text-muted{color: var(--muted) !important}
+/* Override for hero section */
+
+/* Uniform card images + equal card heights */
+.achievements .card { display:flex; flex-direction:column; height:100%; }
+.achievements .card-img-top{
+  width:100%;
+  aspect-ratio: 16/9;        /* keeps all images same shape */
+  object-fit: cover;         /* crop to fill without distortion */
+  border-top-left-radius:.5rem;
+  border-top-right-radius:.5rem;
+}
+/* Fallback for older browsers without aspect-ratio */
+@supports not (aspect-ratio: 16/9){
+  .achievements .card-img-top{ height: 220px; }
+}
+.achievements .card-body{ flex:1; display:flex; flex-direction:column; justify-content:center; }
+/* Facilities cards */
+.facilities .card { display:flex; flex-direction:column; height:100%; }
+.facilities .card-img-top{
+  width:100%;
+  aspect-ratio: 4/3;       /* all images same proportion */
+  object-fit: cover;       /* crops without stretching */
+  border-top-left-radius:.5rem;
+  border-top-right-radius:.5rem;
+}
+.facilities .card-body{
+  flex:1; display:flex; flex-direction:column; justify-content:center; text-align:center;
+}
+/* Leadership section */
+.leadership img {
+  width: 180px;          /* smaller size */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;    /* circular */
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  margin-bottom: 1rem;
+}
+
+.leadership .card {
+  border: 0;
+  background: transparent;
+  text-align: center;
+}
+
+:root{
+  --brand-maroon:#7a0f16;
+}
+
+/* Base hero */
+.hero{
+  position: relative;
+  min-height: 38vh;                /* tighter height */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  margin: 0;                       /* no gap below navbar */
+}
+
+:root{
+  --brand-maroon:#7a0f16;
+}
+
+/* Base hero */
+.hero{
+  position: relative;
+  min-height: 38vh;                /* tighter height */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  margin: 0;                       /* no gap below navbar */
+}
+
+//* General hero block */
+.hero{
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  color: #fff;
+}
+
+/* Solid style background for gallery (same as admissions) */
+.hero--solid{
+  background: #7a6f6b; /* use same gray/brown tone as admissions page */
+}
+
+/* Optional: if you want each hero to have different solid color */
+.hero--gallery{ background:#7a6f6b; } /* gallery */
+.hero--admissions{ background:#7a6f6b; } /* admissions */
